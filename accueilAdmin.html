@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Accueil Bibliothécaire</title>
+        
+        <link rel="stylesheet" type="text/css" href="./creative.css">
+        
+
+    </head>
+    <body>
+        <script type="text/javascript">
+            function Deconnexion() {
+                return confirm("Etes-vous sûr de vouloir vous déconnecter ?");
+            }    
+        </script>
+        <form method="post" onsubmit="Deconnexion();" action="index.php">
+            <h1>Bonjour, bibliothécaire !</h1>
+            <a type="button" class="btn btn-outline-primary btn-lg btn-block" href="affiche/affiche_livre.php">Liste des livres</a><br>
+
+            <a type="button" class="btn btn-outline-primary btn-lg btn-block" href="affiche/affiche_personne.php">Liste des personnes inscrites</a><br>
+   
+            <a type="button" class="btn btn-outline-primary btn-lg btn-block" href="affiche/affiche_emprunteur.php">Liste des emprunts</a><br>
+
+            <a type="button" class="btn btn-outline-info btn-lg btn-block" href="inserer/insererLivres.php">Ajouter un livre</a><br>
+
+            <a type="button" class="btn btn-outline-info btn-lg btn-block" href="inserer/insererPersonne.php">Ajouter une personnes</a><br>
+   
+            <a type="button" class="btn btn-outline-info btn-lg btn-block" href="inserer/insererEmprunteur.php">Ajouter un emprunteur</a><br>
+
+            
+                <button type="submit" class="btn btn-danger" value="Déconnexion">Déconnexion</button>
+       
+        </form>
+    </body>
+</html>

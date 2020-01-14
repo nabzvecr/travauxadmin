@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Accueil client</title>
+        
+        <link rel="stylesheet" type="text/css" href="./creative.css">
+    
+	</head>
+    <body>
+        <script type="text/javascript">
+            function onClickDeconnexion() {
+                return confirm("Etes-vous sûr de vouloir vous déconnectez ?");
+            }    
+        </script>
+        <form method="post" onsubmit="onClickDeconnexion();" action="index.php">
+            <h1>Bonjour cher(e) client(e) !</h1>
+   
+         <a type="button" class="btn btn-outline-primary btn-lg btn-block" href="affiche/affiche_livre.php">Liste des livres</a><br>
+   
+         <a type="button" class="btn btn-outline-primary btn-lg btn-block" href="affiche/affiche_emprunteur.php">Liste des emprunts</a><br>
+       
+           
+                <button type="submit" class="btn btn-danger" value="Déconnexion">Déconnexion</button>
+            
+        </form>
+    </body>
+</html>
